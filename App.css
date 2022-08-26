@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ''
+}
+
+/* login form */
+
+.bg-login {
+    background-color: #ecfccb;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.bg-login h1{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.form-login {
+    width: 22%;
+    height: 45%;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bef264;
+    border-radius: 10px;
+}
+
+.table-form {
+    width: 95%;
+    height: 90%;
+    font-size: 16px;
+}
+
+.table-form th{
+    font-size: 30px;
+    padding-bottom: 10px; 
+}
+
+.field{
+    margin-left: 10px;
+    height: 25px;
+}
+
+.td-btn {
+    text-align: center;
+}
+.btn{
+    width: 70px;
+    height: 23px;
+}
+
+.errors {
+    color: red;
+    margin-left: 10px;
+}
+
+/* background todo list */
+
+.bg-todolist{
+    background-color: #ecfeff;
+    height: 100vh;
+}
+
+.newtodo{
+    height: 15vh;
+    padding-top: 20px;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+/* New todo */
+
+.container-newtodo {
+    width: 62%;
+    height: 15vh;
+    margin: auto;
+    background-color: #67e8f9;
+    border-radius: 10px;
+    position: fixed;
+    
+}
+
+.container-newtodo .container-newtodo-greeting{
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.container-inp-btn{
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.container-inp-btn input{
+    width: 75%;
+    height: 5vh;
+    margin: 0px 5px;
+    font-size: 28px;
+}
+
+.container-inp-btn button{
+    width: 20%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container-inp-btn button:hover{
+    background-color: #a3e635;
+}
+
+/* todo list */
+
+.container-list{
+    width: 60%;
+    margin: 30px auto;
+}
+
+/* todo list item */
+
+.container-list-item{
+    border: 1px solid;
+    width: 100%;
+    margin: 5px 3px auto;
+    border-radius: 10px;
+    background-color: #cffafe;
+}
+
+.container-list-item input{
+    width: 40%;
+    height: 40px;
+    border-radius: 2px;
+    margin: 5px 20px;
+    font-size: 22px;
+    display: none;
+}
+.container-list-item-text{
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-list-item p{
+    width: 95%;
+    font-size: 22px;
+    margin: 2px 20px;
+}
+.container-list-item .container-list-item-child{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.container-list-item .container-list-item-child .delete, .edit, .save{
+    width: 70px;
+    margin: 5px 3px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.delete:hover, .edit:hover, .save:hover{
+    background-color: greenyellow;
+}
+
+
+
+/* responsive mobile */
+
+@media only screen and (max-width: 768px){
+    
+    .form-login {
+        width: 90%;
+    }
+
+    .container-newtodo {
+        width: 95%;
+    }
+
+    .container-list{
+        width: 95%;
+    }
+
+    .container-list-item-text{
+        width: 95%;
+    }
+
+    .container-list-item .container-list-item-child .delete, .edit, .save{
+        height: 25px;
+    }
+    
+  }
